@@ -24,7 +24,7 @@ function fiboAddEven(start, limit) {
     // filter out all items that are even and add them up
     var result = 0;
     fibArray.forEach(function(eachItem){
-        if (eachItem % 2 === 0) result += eachItem; 
+        if (eachItem % 2 === 0) result += eachItem;
     });
 
     return result;
