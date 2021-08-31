@@ -8,7 +8,7 @@ function getSumOfMultiples(limit) {
     // confirm limit is a number 
     if (typeof limit !== "number") return "The parameter supplied for fn getSumOfMultiples must be a valid number";
 
-    var sumOfMultiples = 0;
+    let sumOfMultiples = 0;
     for (let x = 1; x < limit; x++) {
         if ((x % 3 === 0) || (x % 5 === 0)) {
             sumOfMultiples = sumOfMultiples + x;

@@ -5,7 +5,7 @@
 function fiboAddEven(start, limit) {
     if ((typeof start !== "number" || start === 0) || typeof limit !== "number") return "Arguments supplied to fn fiboEvenAdd must a natural integer";
 
-    var fibArray = [];
+    let fibArray = [];
     fibArray.push(start);
 
     for (let i = 1; i < limit; i++) {
@@ -22,7 +22,7 @@ function fiboAddEven(start, limit) {
     }
 
     // filter out all items that are even and add them up
-    var result = 0;
+    let result = 0;
     fibArray.forEach(function(eachItem){
         if (eachItem % 2 === 0) result += eachItem; 
     });
