@@ -3,7 +3,7 @@
 //By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 function fiboAddEven(start, limit) {
-    if ((typeof start !== "number" || start === 0) || typeof limit !== "number") return "Arguments supplied to fn fiboEvenAdd must a natural integer";
+    if ((typeof start !== "number" || start === 0) || typeof limit !== "number") return "Arguments supplied to fn fiboEvenAdd must be a natural integer";
 
     let fibArray = [];
     fibArray.push(start);
