@@ -17,5 +17,5 @@ function sumOfMultiples(limit: number): number {
 	return total;
 }
 
-// Call function with limit 100
+// Call function with limit 1000
 console.log(sumOfMultiples(1000));
