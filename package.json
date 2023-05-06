@@ -1,0 +1,15 @@
+{
+  "name": "euler-largest-palindrome-product",
+  "version": "1.0.0",
+  "description": "Project Euler problem 4",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
