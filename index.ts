@@ -5,8 +5,8 @@
  * Reference: https://projecteuler.net/problem=4
  */
 
-function palindromeProduct(from: number, to: number): number  {
-	function isPalindrome(input): boolean {
+export default function palindromeProduct(from: number, to: number): number  {
+	const isPalindrome = (input): boolean => {
 		let inputString: string = input.toString();
 
 		for (let i = 0; i < inputString.length / 2; i++) {
@@ -17,7 +17,7 @@ function palindromeProduct(from: number, to: number): number  {
 	}
 
 	const stash = [];
-	for (let i = from; i < to; i++) {
+	for (let i = from; i <= to; i++) {
 		for (let k = from; k < to; k++) {
 			let product = i * k;
 
@@ -27,5 +27,3 @@ function palindromeProduct(from: number, to: number): number  {
 
 	return Math.max(...stash);
 }
-
-console.log(palindromeProduct(100, 1000));
